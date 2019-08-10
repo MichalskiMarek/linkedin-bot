@@ -1,0 +1,11 @@
+{
+  "name": "linkedin-bot",
+  "version": "1.0.0",
+  "description": "LinkedIn bot",
+  "main": "index.js",
+  "author": "Maro",
+  "license": "MIT",
+  "dependencies": {
+    "puppeteer": "^1.19.0"
+  }
+}
