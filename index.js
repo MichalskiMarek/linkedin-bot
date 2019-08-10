@@ -6,6 +6,8 @@ const PASSWORD_SELECTOR = "#password";
 const BUTTON_SELECTOR =
   "#app__container > main > div > form > div.login__form_action_container > button";
 const INVITATION_SELECTOR = ".mn-invitation-list";
+const SELECT_ALL_SELECTOR = "#contact-select-checkbox";
+const ACCEPT_SELECTOR = ".self-focused .ember-view > div > button:nth-child(3)";
 
 async function run() {
   const browser = await puppeteer.launch({
@@ -28,7 +30,8 @@ async function run() {
     await page.waitForSelector(INVITATION_SELECTOR, {
       timeout: 1000
     });
-    console.log("The element appeared.");
+    await page.click(SELECT_ALL_SELECTOR);
+    //await page.click(ACCEPT_SELECTOR);
   } catch (error) {
     console.log("The element didn't appear.");
   }
