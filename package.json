@@ -6,6 +6,7 @@
   "author": "Maro",
   "license": "MIT",
   "dependencies": {
-    "puppeteer": "^1.19.0"
+    "puppeteer": "^1.19.0",
+    "readline-sync": "^1.4.10"
   }
 }
